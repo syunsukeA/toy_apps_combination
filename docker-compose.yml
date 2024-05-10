@@ -1,0 +1,10 @@
+# ToDo: appコンテナを作成する
+version: '3'
+services:
+  web:
+    build: frontend/.
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/web
+    working_dir: /web/frontend
